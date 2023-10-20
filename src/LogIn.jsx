@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Card, Button, Form } from 'react-bootstrap';
 import {useNavigate} from 'react-router-dom';
 
+
 async function postData(url = "", data = {}) {
 
   const response = await fetch(url, {
@@ -33,8 +34,8 @@ const Login = () => {
       // Handle login error 
       console.error(response.error);
     } else {
-      // Go to movies page on successful login
-      navigate('/');
+
+      navigate('/minsida');
     }
   };
 
