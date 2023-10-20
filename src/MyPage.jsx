@@ -3,34 +3,28 @@ import { Link } from 'react-router-dom';
 import { Container, Card, Button, Form } from 'react-bootstrap';
 import {useNavigate} from 'react-router-dom';
 
+
 async function deleteFetch(url=""){
   const response = await fetch(url, {method: 'DELETE'});
   return response.json();
-  }
-  
-const MyPage = () => {
-  const cardStyle = {
-    backgroundColor: 'rgba(211, 211, 211, 0.6)',
-    maxWidth: '1200px',
-    margin: '0 auto',
-    display: 'flex',
-    flexDirection: 'column',
-    borderRadius: '10px',
-    padding: '20px',
-  };
+}
 
+const MyPage = () => {
+
+  const cardStyle = { backgroundColor: 'rgba(211, 211, 211, 0.6)', maxWidth: '600px', margin: '0 auto' };
   const navigate = useNavigate();
 
   const handleLogout = async () => {
+
     try {
     
-      await deleteFetch('/api/login')
+      await deleteFetch('/api/login');
+      navigate("/");
 
-      // After successful logout, navigate to the movie page ("/filmer").
-      navigate('/');
     } catch (error) {
       console.error('Logout failed:', error);
     }
+
   };
 
   // Replace these placeholders with the actual user data
