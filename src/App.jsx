@@ -5,6 +5,7 @@ import BasicNavbar from "./components/Navbar/Navbar";
 import Background from './components/MainSide/Background';
 import { Container, Row, Col } from 'react-bootstrap';
 import MovieFetch from './components/MovieFetch';
+import { AuthProvider } from './auth';
 
 export default function App() {
   const movies = MovieFetch();

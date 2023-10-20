@@ -24,8 +24,8 @@ export class RestAclSecurity {
     let idMatchesUserId = id && userId && id === userId;
 
     // check query against rules
-    let ok = !global.settings.aclOn || rules.some(
-      ({ userRole: u, entity: e, requestMethod: r }) =>
+    let ok = !global.settings.aclOn || rules.some( 
+      ({ userRole: u, entity: e, requestMethod: r }) => 
         (u === '*' || u === userRole)
         && (r === '*' || r === reqMethod)
         && (
