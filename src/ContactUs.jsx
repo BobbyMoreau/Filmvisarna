@@ -12,10 +12,10 @@ const ContactUs = () => {
       <Card style={cardStyle}>
         <Card.Body>
           <h1>Kontakta oss</h1>
-          <p>If you have any questions or need assistance, feel free to contact us:</p>
+          <p>Behöver du hjälp eller har några frågor? Kontakta oss gärna:</p>
           <ul>
-            <li>Email: {email}</li>
-            <li>Phone: {phoneNumber}</li>
+            <li>E-post: {email}</li>
+            <li>Telefon: {phoneNumber}</li>
           </ul>
         </Card.Body>
       </Card>
