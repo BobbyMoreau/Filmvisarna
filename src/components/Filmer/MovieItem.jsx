@@ -10,14 +10,14 @@ function MovieItem({ movie }) {
     <>
       <Row>
         <Col>
-          <Link to={`/detaljsidan/${movie.id}`}> 
+          <Link to={`/detaljsidan/${movie.id}`}>
             <div className="poster">
               <img
                 src={movie.description.poster}
                 alt="Movie Poster"
                 className="movie-poster"
               />
-              
+
             </div>
           </Link>
         </Col>
@@ -26,13 +26,13 @@ function MovieItem({ movie }) {
           <h2 className="movie-title">{movie.title}</h2>
           <p className="movie-description">{movie.description.genre} I Längd: {time} I Åldersgräns: {movie.description.ageRating} år</p>
         </Col>
-        
+
         <Col>
-            <Link to={`/detaljsidan/${movie.id}`}> <button className="btn btn-primary">Detaljer</button></Link>
+          <Link to={`/detaljsidan/${movie.id}`}> <button className="btn btn-primary" style={{ marginTop: '10px', marginBottom: '5px', marginLeft: '10px', marginRight: '15px' }}>Detaljer</button></Link>
         </Col>
-       
-      </Row>     
-</>
+
+      </Row>
+    </>
   );
 };
 
