@@ -1,57 +1,80 @@
 /*Movies.css */
 .movie-poster {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border: 2px solid black;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border: 4px solid #A76B09;
+  margin-bottom: 10px;
 }
 
 /*movie-filter.css */
 
 .age-filter {
-    margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .genre-filter {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .age-filter .btn {
-    background-color: #ff5722;
-    /* Byt ut med den färg du föredrar */
+  background-color: #A76B09;
+  /* Byt ut med den färg du föredrar */
 }
 
 .genre-filter .btn {
-    background-color: #2196f3;
-    /* Byt ut med den färg du föredrar */
+  background-color: #A76B09;
+  /* Byt ut med den färg du föredrar */
 }
 
 /*Movie-item*/
 
-.css .movie-item {
-    margin-bottom: 10px;
+.movie-item {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .poster img {
-    width: 150px;
-    height: auto;
-    border: 2px solid black;
+  width: 150px;
+  height: auto;
+  border: 4px solid #A76B09;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .movie-info {
-    display: inline-block;
-    margin-left: auto;
-    /* Justera avståndet mellan postern och info-raden */
+  display: inline-block;
+  margin-left: 1px;
+  /* Justera avståndet mellan postern och info-raden */
 }
 
 .movie-title {
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: white;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: white;
 }
 
 .movie-description {
-    margin: 0;
-    font-size: 16px;
-    color: white;
+  margin-top: 10;
+  font-size: 16px;
+  color: white;
+}
+
+.detaljer-button {
+  background-color: #A76B09;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
+
+.detaljer-button:hover {
+  background-color: #A76B09;
+  /* Change to your preferred hover color */
 }
